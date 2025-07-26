@@ -31,7 +31,7 @@ const AboutSection = () => {
       institution: 'Vellore Institute Of Technology',
       degree: 'B.Tech CSE',
       duration: '2023 - 2027',
-      score: 'CGPA: 9.46',
+      score: 'CGPA: 9.55',
       location: 'Chennai',
       icon: GraduationCap,
       color: 'from-blue-500 to-teal-500'
