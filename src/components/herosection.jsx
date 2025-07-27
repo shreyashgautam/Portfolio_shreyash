@@ -110,7 +110,7 @@ export default function HeroSection() {
             <div className="relative group">
               <div className="absolute -inset-1 bg-gradient-to-r from-blue-500 via-teal-500 to-green-400 rounded-full opacity-20 group-hover:opacity-30 blur animate-pulse-slow"></div>
               <div className="relative bg-gradient-to-r from-gray-800 to-gray-900 border border-teal-500/30 text-teal-300 px-5 py-2 rounded-full text-sm font-bold flex items-center gap-2 backdrop-blur-sm">
-                <div className="w-2 h-2 bg-gradient-to-r from-green-400 to-blue-400 rounded-full animate-ping"></div>
+      <div className="w-2 h-2 bg-gradient-to-r from-red-300 to-red-500 rounded-full animate-ping"></div>
                 <span className="bg-gradient-to-r from-blue-300 to-green-300 bg-clip-text text-transparent">Available for Work</span>
               </div>
             </div>

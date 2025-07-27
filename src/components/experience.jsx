@@ -13,6 +13,13 @@ import {
   ArrowUpRight
 } from "lucide-react";
 
+import ieee from '../assets/ieee.png'
+import robotics from '../assets/robotics.png'
+import tpcodl from '../assets/tpcodl.png'
+
+import vibrancevit from '../assets/vibrancevit.png'
+
+
 export default function ExperienceSection() {
   const [isLoaded, setIsLoaded] = useState(false);
   const [visibleItems, setVisibleItems] = useState(new Set());
@@ -65,7 +72,7 @@ export default function ExperienceSection() {
         "Created Threat Detection app using YOLOv8 with 92% accuracy",
         "Implemented API integration using Kotlin"
       ],
-      icon: Code,
+      icon: tpcodl,
       color: "from-cyan-400 to-blue-500",
       accentColor: "cyan-400",
       bgColor: "bg-cyan-400/20"
@@ -82,7 +89,7 @@ export default function ExperienceSection() {
         "Coordinated discussions on AI, IoT, quantum computing",
         "Fostered knowledge exchange with industry professionals"
       ],
-      icon: Zap,
+      icon: ieee,
       color: "from-purple-400 to-pink-500",
       accentColor: "purple-400",
       bgColor: "bg-purple-400/20"
@@ -99,7 +106,7 @@ export default function ExperienceSection() {
         "Handled 100+ inquiries smoothly",
         "Managed vendor relationships efficiently"
       ],
-      icon: Shield,
+      icon: vibrancevit,
       color: "from-emerald-400 to-teal-500",
       accentColor: "emerald-400",
       bgColor: "bg-emerald-400/20"
@@ -116,7 +123,7 @@ export default function ExperienceSection() {
         "Implemented real-time updates and forms",
         "Enhanced digital visibility of events"
       ],
-      icon: Bot,
+      icon: robotics,
       color: "from-orange-400 to-red-500",
       accentColor: "orange-400",
       bgColor: "bg-orange-400/20"
@@ -157,7 +164,6 @@ export default function ExperienceSection() {
         {/* Compact Cards Grid */}
         <div className="grid md:grid-cols-2 gap-6 max-w-5xl mx-auto">
           {experiences.map((exp, index) => {
-            const IconComponent = exp.icon;
             return (
               <div
                 key={index}
@@ -181,8 +187,12 @@ export default function ExperienceSection() {
                   {/* Header with icon and role */}
                   <div className="flex items-start justify-between mb-4">
                     <div className="flex items-start gap-3">
-                      <div className={`w-12 h-12 bg-gradient-to-r ${exp.color} rounded-xl flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform duration-300`}>
-                        <IconComponent className="w-6 h-6 text-white" />
+                      <div className={`w-12 h-12 bg-gradient-to-r  rounded-xl flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform duration-300 overflow-hidden`}>
+                        <img 
+                          src={exp.icon} 
+                          alt={`${exp.company} logo`}
+                          className="w-20 h-20 object-contain rounded"
+                        />
                       </div>
                       <div>
                         <h3 className="text-lg font-bold text-white group-hover:text-cyan-300 transition-colors">

@@ -6,6 +6,9 @@ import {
   Calendar,
   GraduationCap
 } from 'lucide-react';
+import dps from '../assets/dpspatna.png'
+
+import vit from '../assets/vitchennai.png'
 
 const AboutSection = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -29,11 +32,11 @@ const AboutSection = () => {
   const education = [
     {
       institution: 'Vellore Institute Of Technology',
-      degree: 'B.Tech CSE',
+      degree: 'B.Tech CSE (AIML)',
       duration: '2023 - 2027',
       score: 'CGPA: 9.55',
       location: 'Chennai',
-      icon: GraduationCap,
+      logo: vit,
       color: 'from-blue-500 to-teal-500'
     },
     {
@@ -42,7 +45,7 @@ const AboutSection = () => {
       duration: '2021 - 2023',
       score: 'Percentage: 96%',
       location: 'Patna',
-      icon: BookOpen,
+      logo:dps,
       color: 'from-teal-500 to-green-500'
     }
   ];
@@ -142,7 +145,6 @@ const AboutSection = () => {
                 </h3>
                 <div className="flex-1 space-y-6">
                   {education.map((edu, index) => {
-                    const Icon = edu.icon;
                     return (
                       <div 
                         key={index}
@@ -152,8 +154,22 @@ const AboutSection = () => {
                         <div className="absolute -inset-2 bg-gradient-to-r from-blue-500/10 to-green-500/10 rounded-2xl blur opacity-50 group-hover:opacity-100 transition-all duration-500"></div>
                         <div className="relative bg-gray-700/40 backdrop-blur p-6 rounded-2xl border border-gray-600/50 group-hover:border-teal-500/50 transition-all duration-300">
                           <div className="flex items-start space-x-4">
-                            <div className={`flex-shrink-0 w-12 h-12 bg-gradient-to-r ${edu.color} rounded-xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300`}>
-                              <Icon className="w-6 h-6 text-white" />
+                            <div className="flex-shrink-0 w-12 h-12 rounded-xl overflow-hidden bg-white/10 backdrop-blur flex items-center justify-center group-hover:scale-110 transition-transform duration-300 border border-gray-600/30">
+                              <img 
+                                src={edu.logo} 
+                                alt={`${edu.institution} logo`}
+                                className="w-10 h-10 object-contain rounded-lg"
+                                onError={(e) => {
+                                  // Fallback to gradient background with graduation cap icon if logo fails to load
+                                  e.target.style.display = 'none';
+                                  e.target.nextSibling.style.display = 'flex';
+                                }}
+                              />
+                              <div 
+                                className={`w-10 h-10 bg-gradient-to-r ${edu.color} rounded-lg items-center justify-center hidden`}
+                              >
+                                <GraduationCap className="w-5 h-5 text-white" />
+                              </div>
                             </div>
                             <div className="flex-1">
                               <div className="flex flex-col mb-3">

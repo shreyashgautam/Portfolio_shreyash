@@ -45,7 +45,7 @@ export default function AchievementsPage() {
       shadowColor: "shadow-blue-500/20",
       type: "Winner",
       category: "Hackathon",
-      link: ""
+      link: "https://drive.google.com/file/d/1WEN4b2C3VC1MSnZeUkDMXOxwOgxFHLF4/view?usp=drive_link"
     },
     {
       id: 1,
@@ -105,7 +105,7 @@ export default function AchievementsPage() {
       shadowColor: "shadow-blue-600/20",
       type: "Academic",
       category: "Achievement",
-      link: ""
+      link: "https://drive.google.com/file/d/15k43ghAxpKUeoUK5Ir8DdO5dof5B2mfk/view?usp=drive_link"
     },
     {
       id: 5,
@@ -150,19 +150,31 @@ export default function AchievementsPage() {
       shadowColor: "shadow-cyan-600/20",
       type: "Participation",
       category: "Multiple",
-      link: ""
+      link: "https://drive.google.com/file/d/1gWsupb-oEW868wmnYptpq9swi0EfjnGp/view?usp=drive_link"
     }
   ];
 
-  const handleViewDetails = (link) => {
-    if (link) {
-      window.open(link, '_blank', 'noopener,noreferrer');
+  // Fixed handleViewDetails function
+  const handleViewDetails = (e, link) => {
+    e.preventDefault();
+    e.stopPropagation();
+    
+    if (link && link.trim() !== "") {
+      try {
+        window.open(link, '_blank', 'noopener,noreferrer');
+      } catch (error) {
+        console.error('Error opening link:', error);
+        // Fallback method
+        const newWindow = window.open();
+        if (newWindow) {
+          newWindow.location = link;
+        }
+      }
     }
   };
 
   return (
-    <div className="min-h-screen bg-black relative overflow-hidden"
-    id="achievements" >
+    <div className="min-h-screen bg-black relative overflow-hidden" id="achievements">
       {/* Dynamic Background Pattern */}
       <div className="absolute inset-0 z-0">
         {/* Geometric pattern */}
@@ -269,13 +281,14 @@ export default function AchievementsPage() {
 
                     {/* Action Button */}
                     <div className="mt-auto">
-                      {item.link ? (
+                      {item.link && item.link.trim() !== "" ? (
                         <button 
-                          onClick={() => handleViewDetails(item.link)}
-                          className={`group/btn relative w-full inline-flex items-center justify-center gap-2 bg-gradient-to-r ${item.gradient} text-white text-sm font-semibold py-3 px-4 rounded-xl shadow-lg transition-all duration-300 hover:shadow-xl hover:scale-105 overflow-hidden`}
+                          onClick={(e) => handleViewDetails(e, item.link)}
+                          className={`group/btn relative w-full inline-flex items-center justify-center gap-2 bg-gradient-to-r ${item.gradient} text-white text-sm font-semibold py-3 px-4 rounded-xl shadow-lg transition-all duration-300 hover:shadow-xl hover:scale-105 overflow-hidden cursor-pointer`}
+                          type="button"
                         >
                           <span className="relative z-10">View Certificate</span>
-                          <ArrowUpRight className="w-4 h-4 relative z-10 transition-transform duration-300 group-hover/btn:translate-x-1 group-hover/btn:-translate-y-1" />
+                          <ExternalLink className="w-4 h-4 relative z-10 transition-transform duration-300 group-hover/btn:translate-x-1 group-hover/btn:-translate-y-1" />
                           <div className="absolute inset-0 bg-gradient-to-r from-white/0 via-white/10 to-white/0 translate-x-[-200%] group-hover/btn:translate-x-[200%] transition-transform duration-700"></div>
                         </button>
                       ) : (
@@ -297,8 +310,6 @@ export default function AchievementsPage() {
               </div>
             ))}
           </div>
-
-         
         </div>
       </div>
 
