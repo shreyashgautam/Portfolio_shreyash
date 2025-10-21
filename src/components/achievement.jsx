@@ -33,7 +33,23 @@ export default function AchievementsPage() {
 
   const allItems = [
     {
-      id: 0,
+  id: 0,
+  title: "DataQuest 2.0 - 2nd Position ",
+  organization: "VIT University",
+  description: "Secured 2nd place among 100+ teams in DataQuest 2.0 for developing 'ThreatShield'",
+  date: "2025",
+  icon: <Trophy className="w-7 h-7" />,
+  gradient: "from-purple-600 via-indigo-500 to-blue-500",
+  bgColor: "bg-purple-500/10",
+  borderColor: "border-purple-500/30",
+  shadowColor: "shadow-purple-500/20",
+  type: "Runner-Up",
+  category: "Hackathon",
+  link: "https://drive.google.com/file/d/10GEQITsZgvSadwksNcqvAdB_-N_p7VbW/view?usp=drive_link"
+},
+
+    {
+      id: 1,
       title: "TechnoVIT 2024 - Full Stack Hackathon Winner",
       organization: "VIT University",
       description: "Won the prestigious full-stack hackathon competing among 100+ teams from VIT and other colleges with a team of three members, showcasing exceptional development skills.",
@@ -48,7 +64,7 @@ export default function AchievementsPage() {
       link: "https://drive.google.com/file/d/1WEN4b2C3VC1MSnZeUkDMXOxwOgxFHLF4/view?usp=drive_link"
     },
     {
-      id: 1,
+      id: 2,
       title: "Best Idea at Web Works'24",
       organization: "Android Club",
       description: "Recognized for the most innovative idea in the Web Works'24 competition organized by Android Club, demonstrating creative problem-solving abilities.",
@@ -63,7 +79,7 @@ export default function AchievementsPage() {
       link: "https://drive.google.com/file/d/1wnmT1ozuEN0MJ66IAnTeCjgsrfbmk27J/view?usp=drive_link"
     },
     {
-      id: 2,
+      id: 3,
       title: "CRTFHQ First 60 Fellowship",
       organization: "CRTFHQ",
       description: "Selected among the first 60 fellows for the prestigious CRTFHQ Fellowship program, recognizing outstanding potential in technology and leadership.",
@@ -78,7 +94,7 @@ export default function AchievementsPage() {
       link: "https://drive.google.com/file/d/1TCCVhAEVf8ezy6MlrIdRqMqIL7ACC2KG/view?usp=drive_link"
     },
     {
-      id: 3,
+      id: 4,
       title: "Summer Internship",
       organization: "Tata Power Central Odisha Distribution Limited",
       description: "Successfully completed summer internship at Tata Power Central Odisha Distribution Limited, gaining valuable industry experience in power distribution systems.",
@@ -93,7 +109,7 @@ export default function AchievementsPage() {
       link: "https://drive.google.com/file/d/1MEOiVNlnooCgg3DN2FrRgCnwolKqnS17/view?usp=drive_link"
     },
     {
-      id: 4,
+      id: 5,
       title: "Top 12 in Branch - AI & ML",
       organization: "VIT Chennai",
       description: "Achieved top 12 ranking in Artificial Intelligence and Machine Learning branch at VIT Chennai, demonstrating academic excellence and technical proficiency.",
@@ -108,7 +124,7 @@ export default function AchievementsPage() {
       link: "https://drive.google.com/file/d/15k43ghAxpKUeoUK5Ir8DdO5dof5B2mfk/view?usp=drive_link"
     },
     {
-      id: 5,
+      id: 6,
       title: "The Complete Web Development Bootcamp",
       organization: "Angela Yu - Udemy",
       description: "Comprehensive full-stack web development certification covering HTML, CSS, JavaScript, Node.js, React, and databases with hands-on projects.",
@@ -123,7 +139,7 @@ export default function AchievementsPage() {
       link: ""
     },
     {
-      id: 6,
+      id: 7,
       title: "Food Stall Committee Member",
       organization: "Vibrance 2025 - VIT Chennai",
       description: "Managed food stall operations and logistics during Vibrance 2025, ensuring seamless service delivery and enhancing experience for 3,000+ participants.",
@@ -138,7 +154,22 @@ export default function AchievementsPage() {
       link: ""
     },
     {
-      id: 7,
+      id: 8,
+      title: "Multiple Hackathon Participations",
+      organization: "Various Competitions",
+      description: "Multiple hackathon participation certificates showcasing consistent involvement in competitive programming events and continuous skill development.",
+      date: "2024",
+      icon: <Medal className="w-7 h-7" />,
+      gradient: "from-cyan-600 via-blue-500 to-teal-500",
+      bgColor: "bg-cyan-600/10",
+      borderColor: "border-cyan-600/30",
+      shadowColor: "shadow-cyan-600/20",
+      type: "Participation",
+      category: "Multiple",
+      link: "https://drive.google.com/file/d/1gWsupb-oEW868wmnYptpq9swi0EfjnGp/view?usp=drive_link"
+    },
+    {
+      id: 8,
       title: "Multiple Hackathon Participations",
       organization: "Various Competitions",
       description: "Multiple hackathon participation certificates showcasing consistent involvement in competitive programming events and continuous skill development.",

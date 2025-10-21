@@ -16,6 +16,8 @@ import {
 import ieee from '../assets/ieee.png'
 import robotics from '../assets/robotics.png'
 import tpcodl from '../assets/tpcodl.png'
+import vit from '../assets/vitchennai.png'
+import samsung from '../assets/samsung-logo.png'
 
 import vibrancevit from '../assets/vibrancevit.png'
 
@@ -61,6 +63,22 @@ export default function ExperienceSection() {
 
   const experiences = [
     {
+  role: "Research Intern",
+  company: "Samsung PRISM",
+  duration: "Jul 2025 - Present",
+  type: "Research Internship",
+  location: "Remote, India",
+  description: "Worked on computer vision and vision-language model research for industrial automation and predictive maintenance.",
+  highlights: [
+    "Developed and deployed YOLO-based deep learning model achieving 94% detection accuracy and 35 FPS real-time performance",
+    "Applied Vision-Language Models (VLMs) for industrial machine state detection, improving accuracy by 30%",  ],
+  icon: samsung,
+  color: "from-indigo-400 to-purple-500",
+  accentColor: "indigo-400",
+  bgColor: "bg-indigo-400/20"
+},
+
+    {
       role: "Summer Intern",
       company: "Tata Power Central Odisha Distribution Limited",
       duration: "May 2025 - Jul 2025",
@@ -77,6 +95,22 @@ export default function ExperienceSection() {
       accentColor: "cyan-400",
       bgColor: "bg-cyan-400/20"
     },
+    {
+  role: "Undergraduate Teaching Assistant",
+  company: "IE University",
+  duration: "Jan 2025 - Apr 2025",
+  type: "Teaching Assistantship",
+  location: "VIT Chennai, India",
+  description: "Conducted engaging sessions and hands-on workshops on Full Stack Web Development for undergraduate students.",
+  highlights: [
+    "Mentored 60+ students on MERN stack concepts including React, Node.js, and MongoDB",
+    "Designed lab exercises and real-world projects to strengthen backend and frontend integration",
+  ],
+  icon:vit ,
+  color: "from-amber-400 to-orange-500",
+  accentColor: "amber-400",
+  bgColor: "bg-amber-400/20"
+},
     {
       role: "Vice Chairperson",
       company: "IEEE Photonics Society",

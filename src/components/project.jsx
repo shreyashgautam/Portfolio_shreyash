@@ -66,30 +66,31 @@ const ProjectsSection = () => {
 
 const projects = [
   {
-    id: 'threatsnap',
-    title: 'ThreatSnap',
-    subtitle: 'Real-Time Threat Detection App',
-    description:
-      'Developed a real-time Android threat detection app using YOLOv8 and TensorFlow Lite, achieving 92% detection accuracy and reducing false positives by 38% in offline field testing.',
-    duration: 'Jun 2025',
-    technologies: ['Kotlin', 'TensorFlow Lite', 'YOLOv8', 'Room DB'],
-    github: 'https://github.com/shreyashgautam/ThreatDetection',
-    liveUrl: '#',
-    image: threat,
-    category: 'AI Mobile App',
-    icon: Shield,
-    gradient: 'from-blue-500 to-teal-500',
-    achievements: [
-      { label: 'Detection Accuracy', value: '92%', icon: Award },
-      { label: 'Latency', value: '<120ms', icon: Clock },
-      { label: 'False Positives', value: '↓ 38%', icon: TrendingUp }
-    ],
-    features: [
-      'On-device real-time object detection',
-      'YOLOv8 + TensorFlow Lite integration',
-      'Offline support using Room DB'
-    ]
-  },
+  id: 'threatshield',
+  title: 'ThreatShield',
+  subtitle: 'AI-Powered Insider Threat Detection System',
+  description:
+    'Developed an enterprise-grade AI and blockchain-powered insider threat detection system with 98.7% accuracy, real-time monitoring, and immutable audit trails for cybersecurity intelligence.',
+  duration: 'Jul 2025 – Present',
+  technologies: ['React.js', 'Django', 'XGBoost', 'Blockchain', 'LSTM', 'Kotlin'],
+  github: 'https://github.com/team-fanatics/threatshield',
+  liveUrl: 'https://dataquestfinal-33.vercel.app',
+  image: threat,
+  category: 'AI Security System',
+  icon: Shield,
+  gradient: 'from-purple-600 to-blue-500',
+  achievements: [
+    { label: 'Model Accuracy', value: '98.7%', icon: Award },
+    { label: 'SOC Efficiency', value: '↑ 3x', icon: TrendingUp },
+    { label: 'Response Time', value: '<120ms', icon: Clock }
+  ],
+  features: [
+    'AI ensemble using XGBoost, LSTM & Isolation Forest',
+    'Blockchain-based immutable audit trail',
+    'Real-time dashboard with multi-channel alerts'
+  ]
+},
+
   {
     id: 'intellilib',
     title: 'IntelliLib',

@@ -184,7 +184,7 @@ export default function HeroSection() {
             {/* CTA Button */}
             <div className="flex items-center justify-center lg:justify-end pt-4">
               <a 
-                href="https://drive.google.com/file/d/1cnuWzt3tTwGDmFLUBiBMWLa33ses1Rsg/view?usp=drive_link"
+                href="https://drive.google.com/file/d/1H4fqF2GmYGLgtj3rfhof8z4QlsNNK9Rl/view?usp=drive_link"
                 download
                 className="group relative overflow-hidden"
               >
