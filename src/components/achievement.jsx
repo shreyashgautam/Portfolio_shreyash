@@ -43,7 +43,7 @@ export default function AchievementsPage() {
   bgColor: "bg-purple-500/10",
   borderColor: "border-purple-500/30",
   shadowColor: "shadow-purple-500/20",
-  type: "Runner-Up",
+  type: "Runner-Up ",
   category: "Hackathon",
   link: "https://drive.google.com/file/d/10GEQITsZgvSadwksNcqvAdB_-N_p7VbW/view?usp=drive_link"
 },
