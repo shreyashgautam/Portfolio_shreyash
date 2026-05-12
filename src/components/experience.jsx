@@ -65,7 +65,7 @@ export default function ExperienceSection() {
     {
   role: "Research Intern",
   company: "Samsung PRISM",
-  duration: "Jul 2025 - Present",
+  duration: "Jul 2025 - Mar 2026",
   type: "Research Internship",
   location: "Remote, India",
   description: "Worked on computer vision and vision-language model research for industrial automation and predictive maintenance.",
@@ -97,7 +97,7 @@ export default function ExperienceSection() {
     },
     {
   role: "Undergraduate Teaching Assistant",
-  company: "IE University",
+  company: "Vellore Institute Of Technology",
   duration: "Jan 2025 - Apr 2025",
   type: "Teaching Assistantship",
   location: "VIT Chennai, India",
@@ -114,7 +114,7 @@ export default function ExperienceSection() {
     {
       role: "Vice Chairperson",
       company: "IEEE Photonics Society",
-      duration: "Mar 2024 - Present",
+      duration: "Mar 2024 - Mar 2026",
       type: "Leadership",
       location: "Chennai, India",
       description: "Leading technical initiatives in photonics and emerging tech",
@@ -129,22 +129,22 @@ export default function ExperienceSection() {
       bgColor: "bg-purple-400/20"
     },
     {
-      role: "Stall Committee Member",
-      company: "Vibrance 2025",
-      duration: "Jan 2025 – Mar 2025",
-      type: "Event Management",
-      location: "Chennai, India",
-      description: "Managed stall operations for cultural fest execution",
-      highlights: [
-        "Coordinated logistics for multiple stalls",
-        "Handled 100+ inquiries smoothly",
-        "Managed vendor relationships efficiently"
-      ],
-      icon: vibrancevit,
-      color: "from-emerald-400 to-teal-500",
-      accentColor: "emerald-400",
-      bgColor: "bg-emerald-400/20"
-    },
+  role: "Off Stage Coordinator",
+  company: "Vibrance 2026",
+  duration: "Jan 2026 – Mar 2026",
+  type: "Event Management",
+  location: "Chennai, India",
+  description: "Managed off-stage coordination and ensured smooth execution.",
+  highlights: [
+    "Coordinated overall backstage and off-stage event operations",
+    "Managed crowd flow, artist movement, and stage transition activities",
+    "Ensured smooth communication between technical, management, and hospitality teams"
+  ],
+  icon: vibrancevit,
+  color: "from-pink-500 to-fuchsia-500",
+  accentColor: "pink-400",
+  bgColor: "bg-pink-400/20"
+},
     {
       role: "Web Developer",
       company: "Robotics Club",
@@ -183,10 +183,8 @@ export default function ExperienceSection() {
           isLoaded ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'
         }`}>
           <div className="inline-flex items-center gap-3 mb-4">
-            <div className="w-10 h-10 bg-gradient-to-r from-cyan-400 to-purple-500 rounded-xl flex items-center justify-center">
-              <Briefcase className="w-5 h-5 text-white" />
-            </div>
-            <h1 className="text-4xl md:text-5xl font-black bg-gradient-to-r from-white via-cyan-400 to-purple-400 bg-clip-text text-transparent">
+            
+            <h1 className="text-3xl md:text-6xl font-black bg-gradient-to-r from-white via-cyan-400 to-purple-400 bg-clip-text text-transparent">
               Experience
             </h1>
           </div>

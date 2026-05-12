@@ -34,7 +34,7 @@ const AboutSection = () => {
       institution: 'Vellore Institute Of Technology',
       degree: 'B.Tech CSE (AIML)',
       duration: '2023 - 2027',
-      score: 'CGPA: 9.55',
+      score: 'CGPA: 9.59',
       location: 'Chennai',
       logo: vit,
       color: 'from-blue-500 to-teal-500'
