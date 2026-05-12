@@ -1,10 +1,10 @@
 import { Badge } from "../components/ui/badge";
-import { FaGithub, FaLinkedin, FaCode, FaAndroid } from "react-icons/fa";
-import { SiKotlin } from "react-icons/si";
+import { FaGithub, FaLinkedin, FaCode } from "react-icons/fa";
+import { SiLeetcode } from "react-icons/si";
+import { MdAutoAwesome } from "react-icons/md";
 import { useState, useEffect } from "react";
 
 import shreyash1 from "../assets/shreyash1.png"
-
 import shreyash2 from "../assets/shreyash2.png"
 
 
@@ -28,12 +28,10 @@ export default function HeroSection() {
     >
       {/* Enhanced Background */}
       <div className="absolute inset-0 z-0">
-        {/* Animated circles */}
         <div className="absolute top-1/4 left-1/4 w-32 h-32 bg-gradient-to-r from-blue-500/10 to-green-500/10 rounded-full animate-float"></div>
         <div className="absolute bottom-1/4 right-1/4 w-24 h-24 bg-gradient-to-r from-green-500/10 to-cyan-400/10 rounded-full animate-float-reverse"></div>
         <div className="absolute top-1/2 left-1/6 w-16 h-16 bg-gradient-to-r from-teal-400/10 to-blue-500/10 rounded-full animate-pulse"></div>
         
-        {/* Grid pattern */}
         <div className="absolute inset-0 opacity-5" 
              style={{
                backgroundImage: `radial-gradient(circle at 25% 25%, rgba(59, 130, 246, 0.3) 0%, transparent 50%),
@@ -47,35 +45,28 @@ export default function HeroSection() {
       <div className="relative z-10 w-full max-w-6xl mx-auto">
         <div className="flex flex-col lg:flex-row items-center justify-between gap-12 lg:gap-16">
           
-          {/* Left - Image Gallery (Previously Right) */}
+          {/* Left - Image Gallery */}
           <div className={`flex-1 flex items-center justify-center relative transform transition-all duration-1200 ${
             isLoaded ? 'translate-x-0 opacity-100' : '-translate-x-full opacity-0'
           }`}>
             <div className="relative">
-              
-              {/* Main Image Container with new design */}
               <div className="relative group">
                 <div className="absolute -inset-6 bg-gradient-to-r from-blue-500/20 via-teal-500/20 to-green-400/20 rounded-3xl blur-2xl opacity-50 group-hover:opacity-70 transition-all duration-700 animate-pulse-slow"></div>
                 
-                {/* Decorative rings */}
                 <div className="absolute -inset-8 border border-blue-500/20 rounded-full animate-spin-slow"></div>
                 <div className="absolute -inset-12 border border-green-500/10 rounded-full animate-spin-reverse"></div>
                 
-                {/* Main Image */}
                 <div className="relative z-10 w-64 h-64 md:w-72 md:h-72 lg:w-80 lg:h-80 rounded-3xl overflow-hidden border-2 border-gradient-to-r from-blue-500/50 to-green-500/50 shadow-2xl shadow-blue-500/30 group-hover:shadow-teal-500/40 transition-all duration-700 group-hover:scale-105">
                   <img
                     src={shreyash2}
                     alt="Shreyash G"
                     className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                   />
-                  
-                  {/* Overlay effects */}
                   <div className="absolute inset-0 bg-gradient-to-t from-blue-900/30 via-transparent to-green-900/20 opacity-0 group-hover:opacity-100 transition-opacity duration-700"></div>
                   <div className="absolute -bottom-2 -right-2 w-6 h-6 bg-gradient-to-r from-blue-400 to-green-400 rounded-full animate-bounce"></div>
                 </div>
               </div>
 
-              {/* Secondary Images arranged differently */}
               <div className="absolute -top-6 -left-8 z-20">
                 <div className="relative group">
                   <div className="absolute -inset-2 bg-gradient-to-r from-teal-400/20 to-blue-500/20 rounded-2xl blur-lg opacity-60 group-hover:opacity-80 transition-all duration-300"></div>
@@ -90,7 +81,6 @@ export default function HeroSection() {
                 </div>
               </div>
 
-              {/* Third decorative image */}
               <div className="absolute -bottom-4 -right-6 z-15">
                 <div className="relative group">
                   <div className="w-16 h-16 md:w-20 md:h-20 bg-gradient-to-r from-cyan-400/20 to-emerald-500/20 rounded-full flex items-center justify-center backdrop-blur-sm border border-teal-500/30 group-hover:scale-110 transition-all duration-300">
@@ -101,7 +91,7 @@ export default function HeroSection() {
             </div>
           </div>
 
-          {/* Right - Content (Previously Left) */}
+          {/* Right - Content */}
           <div className={`flex-1 flex flex-col items-center lg:items-end text-center lg:text-right space-y-6 transform transition-all duration-1000 delay-300 ${
             isLoaded ? 'translate-x-0 opacity-100' : 'translate-x-full opacity-0'
           }`}>
@@ -110,12 +100,12 @@ export default function HeroSection() {
             <div className="relative group">
               <div className="absolute -inset-1 bg-gradient-to-r from-blue-500 via-teal-500 to-green-400 rounded-full opacity-20 group-hover:opacity-30 blur animate-pulse-slow"></div>
               <div className="relative bg-gradient-to-r from-gray-800 to-gray-900 border border-teal-500/30 text-teal-300 px-5 py-2 rounded-full text-sm font-bold flex items-center gap-2 backdrop-blur-sm">
-      <div className="w-2 h-2 bg-gradient-to-r from-red-300 to-red-500 rounded-full animate-ping"></div>
+                <div className="w-2 h-2 bg-gradient-to-r from-red-300 to-red-500 rounded-full animate-ping"></div>
                 <span className="bg-gradient-to-r from-blue-300 to-green-300 bg-clip-text text-transparent">Available for Work</span>
               </div>
             </div>
 
-            {/* Name with new styling */}
+            {/* Name */}
             <div className="space-y-4">
               <div className="relative">
                 <h1 className="text-3xl md:text-4xl lg:text-5xl font-black leading-tight">
@@ -124,17 +114,16 @@ export default function HeroSection() {
                     SHREYASH GAUTAM
                   </span>
                 </h1>
-                
                 <div className="absolute -bottom-2 right-0 w-full h-1 bg-gradient-to-l from-blue-500 via-teal-500 to-green-400 animate-expand-right opacity-80 rounded-full"></div>
               </div>
 
-              {/* Developer Titles with new colors */}
+              {/* Developer Titles — AI/ML instead of Kotlin */}
               <div className="flex flex-col sm:flex-row gap-3 items-center lg:items-end">
                 <div className="relative inline-block order-2 sm:order-1">
-                  <div className="absolute -inset-1 bg-gradient-to-r from-cyan-400/20 to-emerald-500/20 blur-sm animate-pulse"></div>
-                  <div className="relative bg-gradient-to-r from-cyan-600 to-emerald-600 text-white text-sm px-4 py-2 rounded-2xl font-bold shadow-lg flex items-center gap-2">
-                    <SiKotlin className="text-cyan-300" />
-                    KOTLIN DEVELOPER
+                  <div className="absolute -inset-1 bg-gradient-to-r from-violet-400/20 to-fuchsia-500/20 blur-sm animate-pulse"></div>
+                  <div className="relative bg-gradient-to-r from-violet-600 to-fuchsia-600 text-white text-sm px-4 py-2 rounded-2xl font-bold shadow-lg flex items-center gap-2">
+                    
+                    AI / ML ENGINEER
                   </div>
                 </div>
                 
@@ -147,24 +136,29 @@ export default function HeroSection() {
               </div>
             </div>
 
-            {/* Description */}
+            {/* Description — updated with AI/ML/AWS */}
             <div className="relative max-w-xl">
               <p className="text-gray-300 text-base md:text-lg leading-relaxed">
-                Designing <span className="text-blue-400 font-bold">innovative web experiences</span> and{" "}
-                <span className="text-teal-400 font-bold">mobile applications</span> using{" "}
+                Building{" "}
+                <span className="text-violet-400 font-bold">intelligent AI & ML systems</span>,{" "}
+                scalable{" "}
+                <span className="text-teal-400 font-bold">full-stack applications</span>, and{" "}
+                cloud-powered solutions on{" "}
+                <span className="text-orange-400 font-bold">AWS</span> using{" "}
                 <span className="text-cyan-300 font-bold">React.js</span>, <span className="text-emerald-400 font-bold">Node.js</span>, and{" "}
-                <span className="text-green-400 font-bold">Kotlin</span>.{" "}
-                <span className="bg-gradient-to-r from-blue-400 via-teal-400 to-green-400 bg-clip-text text-transparent font-bold">
-                  Creating digital magic, one line at a time.
+                <span className="text-fuchsia-400 font-bold">Python</span>.{" "}
+                <span className="bg-gradient-to-r from-violet-400 via-teal-400 to-green-400 bg-clip-text text-transparent font-bold">
+                  Turning data into decisions, one model at a time.
                 </span>
               </p>
             </div>
 
-            {/* Social Links */}
+            {/* Social Links — GitHub, LinkedIn, LeetCode */}
             <div className="flex items-center justify-center lg:justify-end gap-4 pt-2">
               {[
                 { icon: FaGithub, color: "text-gray-300", name: "GitHub", link: "https://github.com/shreyashgautam" },
                 { icon: FaLinkedin, color: "text-blue-400", name: "LinkedIn", link: "https://www.linkedin.com/in/shreyash-gautam/" },
+                { icon: SiLeetcode, color: "text-yellow-400", name: "LeetCode", link: "https://leetcode.com/shreyash_gautam_10" },
               ].map(({ icon: Icon, color, name, link }, index) => (
                 <a 
                   key={index} 
@@ -172,6 +166,7 @@ export default function HeroSection() {
                   target="_blank"
                   rel="noopener noreferrer"
                   className="group relative"
+                  title={name}
                 >
                   <div className="absolute -inset-2 bg-gradient-to-r from-blue-500/20 to-green-500/20 rounded-full opacity-0 group-hover:opacity-100 blur transition-all duration-300"></div>
                   <div className="relative p-3 bg-gray-800/60 backdrop-blur-sm border border-gray-700/50 rounded-full group-hover:border-teal-500/50 transition-all duration-300 group-hover:scale-110 group-hover:rotate-12">
@@ -198,8 +193,8 @@ export default function HeroSection() {
           </div>
         </div>
 
-        {/* Enhanced Scroll Indicator */}
-        <div className={`absolute bottom-8 left-1/2 transform -translate-x-1/2 z-20 transition-all duration-1000 delay-1500 ${
+        {/* Scroll Indicator — moved further down */}
+        <div className={`absolute -bottom-4 left-1/2 transform -translate-x-1/2 z-20 transition-all duration-1000 delay-1500 ${
           isLoaded ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'
         }`}>
           <div className="flex flex-col items-center space-y-3 cursor-pointer group">
@@ -214,81 +209,65 @@ export default function HeroSection() {
         </div>
       </div>
 
-      {/* Enhanced Custom Styles */}
+      {/* Custom Styles */}
       <style jsx>{`
         @keyframes gradient-x {
           0%, 100% { background-position: 0% 50%; }
           50% { background-position: 100% 50%; }
         }
-        
         @keyframes expand-right {
           0% { width: 0%; }
           100% { width: 100%; }
         }
-        
         @keyframes scroll-bounce {
           0%, 100% { transform: translateY(0px); opacity: 1; }
           50% { transform: translateY(8px); opacity: 0.5; }
         }
-        
         @keyframes float {
           0%, 100% { transform: translateY(0px) rotate(0deg); }
           50% { transform: translateY(-20px) rotate(180deg); }
         }
-        
         @keyframes float-reverse {
           0%, 100% { transform: translateY(0px) rotate(0deg); }
           50% { transform: translateY(15px) rotate(-180deg); }
         }
-        
         @keyframes spin-slow {
           from { transform: rotate(0deg); }
           to { transform: rotate(360deg); }
         }
-        
         @keyframes spin-reverse {
           from { transform: rotate(360deg); }
           to { transform: rotate(0deg); }
         }
-        
         @keyframes pulse-slow {
           0%, 100% { opacity: 0.3; }
           50% { opacity: 0.6; }
         }
-        
         .animate-gradient-x {
           background-size: 200% 200%;
           animation: gradient-x 3s ease infinite;
         }
-        
         .animate-expand-right {
           animation: expand-right 1.2s ease-out forwards;
         }
-        
         .animate-scroll-bounce {
           animation: scroll-bounce 2s ease-in-out infinite;
         }
-        
         .animate-float {
           animation: float 6s ease-in-out infinite;
         }
-        
         .animate-float-reverse {
           animation: float-reverse 8s ease-in-out infinite;
         }
-        
         .animate-spin-slow {
           animation: spin-slow 20s linear infinite;
         }
-        
         .animate-spin-reverse {
           animation: spin-reverse 15s linear infinite;
         }
-        
         .animate-pulse-slow {
           animation: pulse-slow 4s ease-in-out infinite;
         }
-        
         .delay-300 { animation-delay: 0.3s; }
         .delay-1000 { animation-delay: 1s; }
         .delay-1500 { animation-delay: 1.5s; }
