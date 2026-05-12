@@ -18,6 +18,8 @@ import {
   BookOpen,
   KeyRound,
   Puzzle,
+  Trophy,
+  Brain
 } from 'lucide-react';
 import intel from '../assets/intel.png'
 import threat from '../assets/threat.png'
@@ -65,6 +67,49 @@ const ProjectsSection = () => {
   }, []);
 
 const projects = [
+ {
+  id: 'clinsight',
+  title: 'ClinSight AI',
+  subtitle: 'Agentic Clinical Intelligence Platform',
+
+  description:
+    'Built an AI-powered healthcare intelligence platform using RAG and multi-agent systems to analyze patient records, detect medical risks, and generate structured clinical briefs for faster and smarter healthcare decisions.',
+
+  duration: 'Mar 2026',
+
+  technologies: [
+    'Python',
+    'React.js',
+    'FAISS',
+    'OCR',
+    'RAG',
+    'Multi-Agent AI'
+  ],
+
+  github: 'https://github.com/shreyashgautam/ClinSight-AI',
+  liveUrl: 'https://glitchcon-team09.vercel.app',
+
+  image: threat,
+
+  icon: Brain,
+
+  category: 'AI Healthcare Platform',
+
+  gradient: 'from-cyan-500 to-blue-600',
+
+  achievements: [
+    { label: 'Hackathon Result', value: ' Winners', icon: Trophy },
+    { label: 'Clinical Brief', value: '<60s', icon: Clock },
+    { label: 'AI Agents', value: '7 Agents', icon: Brain }
+  ],
+
+  features: [
+    'RAG-powered semantic search across patient medical records',
+    '7-agent AI pipeline for triage, OCR, drug interaction & diagnostics',
+        'OCR ingestion system for scanned PDF case sheets',
+    
+  ]
+},
   {
   id: 'threatshield',
   title: 'ThreatShield',
